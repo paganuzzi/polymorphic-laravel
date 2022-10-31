@@ -21,6 +21,7 @@ class TestController extends Controller
 
         /*  asi creas un nuevo registro asociado al usuario, en el caso del profesional
             cambia $tasador por $profesional
+            En esta instancia podrias usar updateOrCreate para menejar los registros en la tabla ocupaciones
         */
 
         $tasador->ocupation()->create(['user_id' => $user->id]);
